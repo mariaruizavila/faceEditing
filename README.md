@@ -49,22 +49,34 @@ We have used the first 1K images from FFHQ to test the model and get the desired
 ## Instructions
 
 ### Prepare the datasets
-Download the training data and place it under a directory `data/train/`. Download as well the testing data and place ir under a directory `data/test/`.
+Download the training data and place it under a directory `prepared_data/train/`. Download as well the testing data and place ir under a directory `data/test/`.
 
-You the need you need to map the datasets to latent codes. For doing this, we have used the Image2StyleGAN encoder to embed the images into the latent space. 
+You then need to map the test dataset to latent codes (the linked training data is already mapped). To embed the images into the latent space of StyleGAN2, we have used the Image2StyleGAN encoder. Download it from [this repository](https://github.com/eladrich/pixel2style2pixel) and download as well the [pretrained latent classifier](https://drive.google.com/file/d/1bMTNWkh5LArlaWSc_wa8VKyq2V42T2z0/view)). Save the pretrained model in `pretrained_models/`. Run the following command:
 
 ```sh
 cd pixel2style2pixel/
 python scripts/inference.py \
 --checkpoint_path=pretrained_models/psp_ffhq_encode.pt \
---data_path=/path/to/ffhq/pngs/ \
---exp_dir=../data/test/ \
+--data_path=../data/test/ \
+--exp_dir=../prepared_data/test/ \
 --test_batch_size=1
 ```
 
-holi
-
-### Prepare StyleGAN2 encoder and generator
+When using the UI, it is also required to map the input image to its latent code. All the images uploaded by the user are stored in `data/input/` and they are internally prepared afterwards.
 
 ### Train all the models
-For doing that download the code from the linked github repositories and follow the explained instructions. 
+For doing that download the code from the linked github repositories, save them under the directory `models/` and follow the explained instructions in their README.  
+
+### Calculate the metrics
+
++ File `evaluation/random.py` contains a function to calculate a random set of attributes to be changed for each sample of the testing dataset.
++ File `evaluation/statistics.py` contains the functions we have used in order to calculate the Change Ratio, Identity Preservation and Attribute Preservation. This metrics are proposed in [this work](https://github.com/adriacarrasquilla/latent-multi-transformer?tab=readme-ov-file).
++ File `evaluation/performance.py` contains the function we have used to evaluate the performance of the models.
++ File `evaluation/attribute_correlation.ipynb` contains the attibute correlation analysis we have made.
++ File `evaluation/` contains the graphs to visualize the changes of the probability of a picture having a certain attribute before and after changing non-targeted attributes.
+
+### Run the UI
+
+```sh
+python UI/initial.py
+```
