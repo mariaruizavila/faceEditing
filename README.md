@@ -80,3 +80,32 @@ For doing that download the code from the linked github repositories, save them 
 ```sh
 python UI/initial.py
 ```
+
+## Structure
+
+```plaintext
+├── data
+│   ├── test
+│   ├── input
+│   └── output
+├── prepared_data
+│   ├── train
+│   ├── test
+│   ├── input
+│   └── output
+├── models
+│   ├── InterFaceGAN
+│   ├── TediGAN
+│   ├── StyleCLIP
+│   ├── pixel2style2pixel
+│   └── latent-multi-transformer
+├── evaluation
+│   ├── random.py
+│   ├── statistics.py
+│   ├── performance.py
+│   ├── attribute_correlation.ipynb
+│   └── probability.ipynb
+├── UI
+    ├── main.py
+    └── initial.py
+```
