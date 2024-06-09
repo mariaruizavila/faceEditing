@@ -73,7 +73,7 @@ For doing that download the code from the linked github repositories, save them 
 + File `evaluation/statistics.py` contains the functions we have used in order to calculate the Change Ratio, Identity Preservation and Attribute Preservation. This metrics are proposed in [this work](https://github.com/adriacarrasquilla/latent-multi-transformer?tab=readme-ov-file).
 + File `evaluation/performance.py` contains the function we have used to evaluate the performance of the models.
 + File `evaluation/attribute_correlation.ipynb` contains the attibute correlation analysis we have made.
-+ File `evaluation/probability` contains the graphs to visualize the changes of the probability of a picture having a certain attribute before and after changing non-targeted attributes.
++ File `evaluation/probability.ipynb` contains the graphs to visualize the changes of the probability of a picture having a certain attribute before and after changing non-targeted attributes.
 
 ### Run the UI
 
