@@ -47,3 +47,24 @@ We have used the first 1K images from FFHQ to test the model and get the desired
 + [Official Implementation](https://github.com/adriacarrasquilla/latent-multi-transformer?tab=readme-ov-file)
 
 ## Instructions
+
+### Prepare the datasets
+Download the training data and place it under a directory `data/train/`. Download as well the testing data and place ir under a directory `data/test/`.
+
+You the need you need to map the datasets to latent codes. For doing this, we have used the Image2StyleGAN encoder to embed the images into the latent space. 
+
+```sh
+cd pixel2style2pixel/
+python scripts/inference.py \
+--checkpoint_path=pretrained_models/psp_ffhq_encode.pt \
+--data_path=/path/to/ffhq/pngs/ \
+--exp_dir=../data/test/ \
+--test_batch_size=1
+```
+
+holi
+
+### Prepare StyleGAN2 encoder and generator
+
+### Train all the models
+For doing that download the code from the linked github repositories and follow the explained instructions. 
