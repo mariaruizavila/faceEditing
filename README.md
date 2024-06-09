@@ -105,7 +105,7 @@ python UI/initial.py
 │   ├── performance.py
 │   ├── attribute_correlation.ipynb
 │   └── probability.ipynb
-├── UI
+└── UI
     ├── main.py
     └── initial.py
 ```
