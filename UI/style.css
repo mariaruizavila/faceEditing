@@ -1,0 +1,55 @@
+/* style.css */
+html, body, .gradio-app {
+    height: 100%;
+    margin-top: 250px;
+    background: url('data:image/png;base64,MARKER_FOR_BASE64') no-repeat center center fixed !important;
+    background-size: cover !important;
+    text-align: justify;
+}
+
+.gradio-theme--dark .gradio-container,
+.gradio-theme--dark .gradio-row,
+.gradio-theme--dark .gradio-column,
+.gradio-theme--dark .gradio-app,
+.gradio-theme--dark .gradio-label,
+.gradio-theme--dark .gradio-input,
+.gradio-theme--dark .gradio-output {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+* {
+    background-color: transparent !important;
+}
+
+.main-background {
+    background-color: rgba(106, 78, 66, 0.967) !important; 
+    padding: 20px !important;
+    border-radius: 10px !important;
+    color: black !important; 
+}
+
+h1 {
+    color: white; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+h2, h3, h4, h5, h6 {
+    color: white; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 5px 0;
+}
+
