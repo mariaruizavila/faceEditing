@@ -65,7 +65,7 @@ python scripts/inference.py \
 When using the UI, it is also required to map the input image to its latent code. All the images uploaded by the user are stored in `data/input/` and they are internally prepared afterwards.
 
 ### Train all the models
-For doing that download the code from the linked github repositories, save them under the directory `models/` and follow the explained instructions in their README. Note that it is not neccessary to train the text encoders in StyleCLIP and TediGAN, you can take a pretrained CLIP instead to replace the visual-linguistic learning module.
+For doing that download the code from the linked github repositories, save them under the directory `models/` and follow the explained instructions in their README to train them. Make sure you train them with the prepared training dataset. Note that it is not neccessary to train the text encoders in StyleCLIP and TediGAN, you can take a pretrained CLIP instead to replace the visual-linguistic learning module.
 
 ### Calculate the metrics
 
