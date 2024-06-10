@@ -75,6 +75,22 @@ For doing that download the code from the linked github repositories, save them 
 + File `evaluation/attribute_correlation.ipynb` contains the attibute correlation analysis we have made.
 + File `evaluation/probability.ipynb` contains the graphs to visualize the changes of the probability of a picture having a certain attribute before and after changing non-targeted attributes.
 
+In order to get the desired metrics you just need to run the following commnads:
+
+```sh
+cd evaluation/
+python statistics.py \
+-- model_path=./models/path/to/model
+```
+
+```sh
+cd evaluation/
+python performance.py \
+-- model_path=./models/path/to/model
+```
+
+You can also run the jupyter notebooks to visualize the data.
+
 ### Run the UI
 
 ```sh
