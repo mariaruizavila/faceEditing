@@ -1,7 +1,7 @@
 # Comparative Analysis of State-of-the-Art Deep-Learning Based Face Editing Algorithms
 ## Acknowledgements
 
-Please note that not all code contained used for this UI was written by me. This project incorporates work from other developers and sources. Wherever possible, I have endeavored to provide links to the source material.
+Please note that not all the code used for this UI was written by me. This project incorporates work from other developers and sources. Wherever possible, I have endeavored to provide links to the source material of the original models.
 
 ## Dependencies
 
