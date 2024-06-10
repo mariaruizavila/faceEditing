@@ -80,13 +80,13 @@ In order to get the desired metrics you just need to run the following commnads:
 ```sh
 cd evaluation/
 python statistics.py \
--- model_path=./models/path/to/model
+-- model_path=../models/path/to/model
 ```
 
 ```sh
 cd evaluation/
 python performance.py \
--- model_path=./models/path/to/model
+-- model_path=../models/path/to/model
 ```
 
 You can also run the jupyter notebooks to visualize the data.
