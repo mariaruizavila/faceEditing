@@ -119,9 +119,12 @@ python UI/initial.py
 │   ├── random.py
 │   ├── statistics.py
 │   ├── performance.py
+│   ├── constants.py
 │   ├── attribute_correlation.ipynb
 │   └── probability.ipynb
 └── UI
     ├── main.py
-    └── initial.py
+    ├── constants.py
+    ├── initial.py
+    └── style.css
 ```
