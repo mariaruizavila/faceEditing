@@ -5,10 +5,20 @@ Please note that not all code contained in this repository was written by me. Th
 
 ## Dependencies
 
-+ Python 3.10
-+ Pytorch 1.1.0
-+ CUDA
-+ Gradio
++ python=3.10.10
++ pytorch=1.13.1
++ torchaudio=0.13.1
++ torchvision=0.14.1
++ cudatoolkit=10.2.89
++ opencv-python==4.7.0.72
++ scikit-image==0.21.0
++ scipy==1.9.1
++ gdown
++ ftfy
++ regex
++ tqdm
++ gradio
++ numpy=1.23.3
 
 ## Dataset
 
@@ -111,10 +121,15 @@ python UI/initial.py
 │   └── output
 ├── models
 │   ├── InterFaceGAN
+│   |   ├──  ...
 │   ├── TediGAN
+│   |   ├──  ...
 │   ├── StyleCLIP
+│   |   ├──  ...
 │   ├── pixel2style2pixel
+│   |   ├──  ...
 │   └── latent-multi-transformer
+│       └──  ...
 ├── evaluation
 │   ├── random.py
 │   ├── statistics.py
