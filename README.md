@@ -143,3 +143,7 @@ python UI/initial.py
     ├── initial.py
     └── style.css
 ```
+
+## UI
+![interfaceGAN](https://github.com/mariaruizavila/faceEditing/assets/102605675/60708641-e2e9-4e87-a86b-4f5d27fa0081)
+
